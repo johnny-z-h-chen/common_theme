@@ -1,0 +1,153 @@
+@import "./common/css_variables";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* scrollbar */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bg);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 20px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-color) var(--scroll-bg);
+}
+
+// ============= page =================
+.for-login {
+  padding: max(20vh, 60px) 0 !important;
+}
+
+.for-login .page-card-head img {
+  max-height: 62px !important;
+}
+
+.page-loadding {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  div {
+    position: absolute;
+    border: 4px solid var(--primary-600);
+    opacity: 1;
+    border-radius: 50%;
+    animation: page-loadding 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  
+  div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+
+  @keyframes page-loadding {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+}
+
+[data-page-route=Workspaces] .layout-main-section-wrapper {
+  margin: 0 !important;
+  padding: 0px !important;
+}
+
+[data-page-route=Workspaces] .layout-main .layout-main-section {
+  margin: 10px 20px !important;
+}
+
+[data-page-route=Workspaces] .layout-main {
+  height: calc(100vh - 120px) !important;
+}
+
+.page-head {
+  top: 0px !important;
+}
+
+// =============== navbar ====================
+.navbar {
+  height: 120px !important;
+  box-shadow: none;
+  border-bottom: 5px solid var(--gray-200);
+
+  .navbar-brand .app-logo {
+    width: 220px !important;
+    max-height: 100px !important;
+  }
+
+  .nav-item {
+    font-size: 16px !important;
+  }
+
+  #navbar-breadcrumbs a {
+    font-size: 16px !important;
+  }
+}
+
+// =============== sidebar ====================
+.sidebar-item-icon {
+  .icon-md {
+    width: 24px !important;
+    height: 24px !important;
+
+    margin-right: 20px !important;
+  }
+}
+
+.sidebar-item-label {
+  font-size: 16px !important;
+}
+
+// ============= Button =================
+.btn-block {
+  padding: 0.4rem 0.5rem !important;
+  font-size: 16px !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--primary-700) !important;
+  border-color: var(--primary-800) !important;
+}
+
+// =============== difference size =================
+@media (min-width: 768px) {
+  body .container {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .layout-main .layout-side-section {
+    padding: 10px 20px !important;
+  }
+}

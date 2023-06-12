@@ -3,20 +3,23 @@ from . import __version__ as app_version
 app_name = "common_theme"
 app_title = "Common Theme"
 app_publisher = "JohnnyChen"
-app_description = "the app is related to the theme"
+app_description = "common ui for erpnext"
 app_email = "johnny.z.h.chenn@outlook.com"
+app_logo_url = "https://kce.com.hk/wp-content/uploads/2021/11/Group-206.png"
 app_license = "MIT"
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/common_theme/css/common_theme.css"
-# app_include_js = "/assets/common_theme/js/common_theme.js"
+app_include_css = "common_theme.bundle.css"
+app_include_js = [
+  "common_theme.bundle.js"
+]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/common_theme/css/common_theme.css"
-# web_include_js = "/assets/common_theme/js/common_theme.js"
+web_include_css = "common_theme.bundle.css"
+web_include_js = "common_theme.bundle.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "common_theme/public/scss/website"
@@ -134,6 +137,8 @@ app_license = "MIT"
 # Testing
 # -------
 
+extend_bootinfo = "common_theme.boot.boot_session"
+
 # before_tests = "common_theme.install.before_tests"
 
 # Overriding Methods
@@ -199,3 +204,7 @@ app_license = "MIT"
 # auth_hooks = [
 #	"common_theme.auth.validate"
 # ]
+
+fixtures = [
+    "Custom Field"
+]
