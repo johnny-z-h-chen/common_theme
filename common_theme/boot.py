@@ -11,29 +11,3 @@ def boot_session(bootinfo):
 
 		if current_menu.item_label in hidden_user_menu:
 			bootinfo["navbar_settings"].settings_dropdown.remove(current_menu)
-
-	support_language_swtich_navbar_items = [
-		{
-			"item_label": "English",
-			"item_type": "Route",
-			"route": "https://docs.erpnext.com/docs/v14/user/manual/en/introduction",
-			"is_standard": 1,
-		},
-		{
-			"item_label": "中文",
-			"item_type": "Route",
-			"route": "https://discuss.frappe.io",
-			"is_standard": 1,
-		},
-		{
-			"item_label": "繁体",
-			"item_type": "Route",
-			"route": "https://github.com/frappe/erpnext/issues",
-			"is_standard": 1,
-		},
-	]
-	# navbar_settings = frappe.get_single("Navbar Settings")
-	# for item in support_language_swtich_navbar_items:
-	# 	navbar_settings.append("support_language_swtich_navbar_items", item)
-	
-	# navbar_settings.save()

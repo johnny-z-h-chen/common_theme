@@ -8,6 +8,8 @@ app_email = "johnny.z.h.chenn@outlook.com"
 app_logo_url = "https://kce.com.hk/wp-content/uploads/2021/11/Group-206.png"
 app_license = "MIT"
 
+extend_bootinfo = "common_theme.boot.boot_session"
+
 # Includes in <head>
 # ------------------
 
@@ -136,9 +138,6 @@ web_include_js = "common_theme.bundle.js"
 
 # Testing
 # -------
-
-extend_bootinfo = "common_theme.boot.boot_session"
-
 # before_tests = "common_theme.install.before_tests"
 
 # Overriding Methods
