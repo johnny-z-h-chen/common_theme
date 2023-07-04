@@ -174,6 +174,17 @@
   background-color: var(--primary-700) !important;
   border-color: var(--primary-700) !important;
 }
+.sidebar-section {
+  margin-top: 10px;
+}
+.sidebar-section .sidebar-action {
+  color: var(--white) !important;
+  font-size: 16px !important;
+}
+.sidebar-section .sidebar-label {
+  color: var(--white) !important;
+  font-size: 16px !important;
+}
 .btn-block {
   padding: 0.4rem 0.5rem !important;
   font-size: 16px !important;
@@ -188,13 +199,17 @@
   }
 }
 @media (min-width: 992px) {
-  .layout-main .layout-side-section {
+  .layout-side-section {
     padding: 10px 20px !important;
     background-color: var(--primary-700) !important;
     color: var(--white) !important;
+  }
+  .layout-main .layout-side-section {
+    height: 100% !important;
+    overflow-y: auto !important;
   }
   .workspace-sidebar-skeleton .skeleton-card {
     background-color: var(--primary-800);
   }
 }
-/*# sourceMappingURL=common_theme.bundle.OD6XGFZJ.css.map */
+/*# sourceMappingURL=common_theme.bundle.USP3QPQJ.css.map */

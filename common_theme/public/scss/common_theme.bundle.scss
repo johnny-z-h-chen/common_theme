@@ -139,6 +139,20 @@
   border-color: var(--primary-700) !important;
 }
 
+.sidebar-section {
+  margin-top: 10px;
+
+  .sidebar-action {
+    color: var(--white) !important;
+    font-size: 16px !important;
+  }
+
+  .sidebar-label {
+    color: var(--white) !important;
+    font-size: 16px !important;
+  }
+}
+
 // ============= Button =================
 .btn-block {
   padding: 0.4rem 0.5rem !important;
@@ -158,7 +172,7 @@
 }
 
 @media (min-width: 992px) {
-  .layout-main .layout-side-section {
+  .layout-side-section {
     padding: 10px 20px !important;
     background-color: var(--primary-700) !important;
     color: var(--white) !important;
