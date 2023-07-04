@@ -1,7 +1,8 @@
 import "./frappe/ui/page.html";
+import "./frappe/ui/page.html";
 import "./frappe/ui/toolbar/navbar.html";
 import "./frappe/ui/page.js";
-import "./frappe/view/workspace.js";
+import "./frappe/ui/workspace_sidebar_loading_skeleton.html";
 
 // setup the full with for UI
 localStorage.container_fullwidth = true;
