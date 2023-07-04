@@ -176,6 +176,19 @@
     padding: 10px 20px !important;
     background-color: var(--primary-700) !important;
     color: var(--white) !important;
+
+    .sidebar-label {
+      color: var(--white) !important;
+      font-size: 16px !important;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        fill: var(--white) !important;
+        color: var(--white) !important;        
+      }
+    }
   }
 
   .workspace-sidebar-skeleton .skeleton-card {
